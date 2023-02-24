@@ -20,7 +20,6 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="font-bold text-3xl">hey</div>
 		</>
 	);
 }
