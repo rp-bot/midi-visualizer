@@ -4,6 +4,7 @@ const KEYS = {
   'W': 'white',
   'B': 'black'
 };
+
 const OCTAVE_STRUCTURE = ['W', 'B', 'W', 'B', 'W', 'W', 'B', 'W', 'B', 'W', 'B', 'W'];
 
 const OCTAVE_RANGES = [[24, 35], [36, 47], [48, 59], [60, 71], [72, 83], [84, 95], [96, 107]];
