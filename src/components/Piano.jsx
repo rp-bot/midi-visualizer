@@ -8,8 +8,8 @@ const Piano = () => {
       {OCTAVE_RANGES.map((octave) => (
         OCTAVE_STRUCTURE.map((key, index) => (
           <Key key={index} keyColor={KEYS[key]} midiNote={octave[0] + index} />
-        ))
-      ))}
+        )).reverse()
+      )).reverse()}
     </div>
   );
 };
