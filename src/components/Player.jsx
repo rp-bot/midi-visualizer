@@ -9,7 +9,7 @@ const Player = () => {
 		const synth = new Tone.Synth().toDestination();
 		const note = Tone.Midi(60).toFrequency(); // 261.6255653005986;
 		const now = Tone.now();
-		console.log(note);
+
 		// trigger the attack immediately
 		synth.triggerAttack(note, now);
 		// wait one second before triggering the release
