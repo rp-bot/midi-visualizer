@@ -15,16 +15,17 @@ const Player = () => {
 		// wait one second before triggering the release
 		synth.triggerRelease(now + 0.5);
 
-		if (navigator.requestMIDIAccess) {
-			navigator.requestMIDIAccess().then(success, failure);
-		}
-		function success(midiAccess) {
-			console.log(midiAccess);
-		}
+		// TODO midi input: https://www.youtube.com/watch?v=KRm_GICiPIQ&t=203s
+		// if (navigator.requestMIDIAccess) {
+		// 	navigator.requestMIDIAccess().then(success, failure);
+		// }
+		// function success(midiAccess) {
+		// 	console.log(midiAccess);
+		// }
 
-		function failure() {
-			console.log("failed");
-		}
+		// function failure() {
+		// 	console.log("failed");
+		// }
 	};
 
 	return (

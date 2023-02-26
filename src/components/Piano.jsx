@@ -11,6 +11,7 @@ const Piano = () => {
 						key={index}
 						keyColor={KEYS[key]}
 						midiNote={octave[0] + index}
+						
 					/>
 				)).reverse()
 			).reverse()}
