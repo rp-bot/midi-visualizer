@@ -14,6 +14,17 @@ const Player = () => {
 		synth.triggerAttack(note, now);
 		// wait one second before triggering the release
 		synth.triggerRelease(now + 0.5);
+
+		if (navigator.requestMIDIAccess) {
+			navigator.requestMIDIAccess().then(success, failure);
+		}
+		function success() {
+			console.log("success");
+		}
+
+		function failure() {
+			console.log("failed");
+		}
 	};
 
 	return (
