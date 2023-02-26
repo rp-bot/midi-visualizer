@@ -7,7 +7,7 @@ const Player = () => {
 
 	const handleClick = () => {
 		const synth = new Tone.Synth().toDestination();
-		const note = Tone.Frequency(77, "midi").toNote();
+		const note = Tone.Midi(60).toFrequency(); // 261.6255653005986;
 		const now = Tone.now();
 		console.log(note);
 		// trigger the attack immediately
