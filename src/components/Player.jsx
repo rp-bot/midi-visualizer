@@ -7,11 +7,13 @@ const Player = () => {
 
 	const handleClick = () => {
 		const synth = new Tone.Synth().toDestination();
+		const note = Tone.Frequency(77, "midi").toNote();
 		const now = Tone.now();
+		console.log(note);
 		// trigger the attack immediately
-		synth.triggerAttack("C4", now);
+		synth.triggerAttack(note, now);
 		// wait one second before triggering the release
-		synth.triggerRelease(now + 1);
+		synth.triggerRelease(now + 0.5);
 	};
 
 	return (
