@@ -4,7 +4,7 @@ import { KEYS, OCTAVE_STRUCTURE, OCTAVE_RANGES } from "../constants/constants";
 
 const Piano = () => {
 	return (
-		<div className=" grid grid-cols-1 w-1 h-0">
+		<div className=" grid grid-cols-1 w-fit h-[500px] overflow-scroll">
 			{OCTAVE_RANGES.map((octave) =>
 				OCTAVE_STRUCTURE.map((key, index) => (
 					<Key

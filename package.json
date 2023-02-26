@@ -11,9 +11,12 @@
   "dependencies": {
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
+    "midi.js": "^0.3.1",
     "next": "13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tone": "^14.7.77",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
