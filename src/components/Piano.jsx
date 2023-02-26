@@ -7,6 +7,9 @@ const Piano = () => {
 	const synth = useRef(null);
 	//TODO const changecolor = "gray-700"
 
+	// TODO useRef to set boolean true or false when mouse is down or up
+	// TODO Add listener when cursor enters the element
+
 	useEffect(() => {
 		synth.current = new Tone.Synth().toDestination();
 	}, []);
@@ -22,7 +25,8 @@ const Piano = () => {
 		synth?.current?.triggerRelease();
 	};
 	return (
-		<div className=" grid grid-cols-1 w-fit h-[500px] overflow-scroll">
+		<div className=" grid grid-cols-1 w-fit ">
+			{/*h-[500px] overflow-scroll */}
 			{OCTAVE_RANGES.map((octave) =>
 				OCTAVE_STRUCTURE.map((key, index) => (
 					<Key
