@@ -1,4 +1,11 @@
-const KEYS_RANGE = [24, 107];
+const KEYS_RANGE = Array.from(
+	{ length: 107 - 24 + 1 },
+	(_, i) => 24 + i
+).reverse();
+
+// how long each row is
+const STAFF = Array.from({ length: 16 }, (_, i) => 1 + i);
+
 // W B W B W W B W B W B W
 const KEYS = {
 	W: "white",
@@ -45,4 +52,4 @@ const OCTAVE_1 = [
 	{ midiNote: 32, keyColor: "white" },
 ];
 
-export { KEYS_RANGE, KEYS, OCTAVE_STRUCTURE, OCTAVE_RANGES };
+export { KEYS_RANGE, STAFF, KEYS, OCTAVE_STRUCTURE, OCTAVE_RANGES };

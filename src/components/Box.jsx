@@ -1,7 +1,11 @@
 import React from "react";
 
-const Box = () => {
-	return <div className="col-span-1 bg-white border border-black h-5">h</div>;
+const Box = ({ beat }) => {
+	return (
+		<div
+			className={`col-span-1 row-span-1 col-start-${beat} bg-gray-700  border border-gray-600 h-5`}
+		></div>
+	);
 };
 
 export default Box;

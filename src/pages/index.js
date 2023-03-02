@@ -23,7 +23,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="max-h-[500px] overflow-scroll">
+			<div className="max-h-[700px] overflow-scroll">
 				<PianoRoll />
 			</div>
 			{/* <Piano /> */}
