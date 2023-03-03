@@ -23,7 +23,7 @@ const Grid = () => {
 		}
 	};
 	return (
-		<div className="bg-gray-800 grid grid-rows-84 grid-cols-16 ">
+		<div className="bg-gray-800  grid grid-rows-84 grid-cols-16  ">
 			{KEYS_RANGE.map((keynum) =>
 				STAFF.map((beatnum, index) => {
 					return (

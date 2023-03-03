@@ -5,6 +5,11 @@ import styles from "@/styles/Home.module.css";
 import Piano from "@/components/Piano";
 import Player from "@/components/Player";
 import PianoRoll from "@/components/PianoRoll";
+import {
+	BsFillPlayFill,
+	BsFillStopFill,
+	BsFillRecordFill,
+} from "react-icons/bs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +28,27 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="max-h-[700px] overflow-scroll">
-				<PianoRoll />
+			<div className="grid grid-cols-5 h-screen gap-4 p-10">
+				<h1 className="col-span-1 col-start-2 justify-self-center self-center">
+					HELLO
+				</h1>
+				<div className="justify-self-center self-center grid grid-cols-3 gap-2 ">
+					<BsFillPlayFill
+						size={40}
+						className="col-span-1 justify-self-center self-center"
+					/>
+					<BsFillStopFill
+						size={40}
+						className="col-span-1 col-start-2 justify-self-center self-center"
+					/>
+					<BsFillRecordFill
+						size={40}
+						className="col-span-1 col-start-3 justify-self-center self-center"
+					/>
+				</div>
+				<div className="col-span-3 col-start-2 justify-self-center self-center max-h-full max-w-full overflow-x-scroll overflow-y-scroll  ">
+					<PianoRoll />
+				</div>
 			</div>
 			{/* <Piano /> */}
 			{/* <Player /> */}

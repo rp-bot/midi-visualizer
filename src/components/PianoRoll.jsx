@@ -4,9 +4,11 @@ import Grid from "./Grid";
 const PianoRoll = () => {
 	return (
 		<div className="flex">
-			<Piano />
-			<div className="bg-gray-800 flex-1">
-					<Grid />
+			<div className="flex-none">
+				<Piano />
+			</div>
+			<div className="flex-1 bg-gray-800 min-w-[1920px]">
+				<Grid />
 			</div>
 		</div>
 	);
