@@ -27,21 +27,10 @@ const Grid = () => {
 	// 	}
 	// };
 	return (
-		<div className={`bg-gray-800  grid grid-rows-84 grid-cols-16  `}>
-			{KEYS_RANGE.map((keynum) =>
-				STAFF.map((beatnum, index) => {
-					return (
-						<div key={index}>
-							<Box
-								key={index}
-								beatnum={beatnum}
-								keynum={keynum}
-								
-							/>
-						</div>
-					);
-				})
-			)}
+		<div className={`bg-white grid grid-rows-84  grid-flow-col`}>
+			{KEYS_RANGE.map((keynum, index) => {
+				return <Row key={index} keynum={keynum} />;
+			})}
 		</div>
 	);
 };
