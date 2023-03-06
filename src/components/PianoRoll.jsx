@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Piano from "./Piano";
 import Grid from "./Grid";
 import { VscTriangleDown } from "react-icons/vsc";
@@ -30,7 +30,7 @@ const PianoRoll = () => {
 						/>
 					</svg>
 				</div>
-				<div>h</div>
+				<div onClick={handleClick}>h</div>
 
 				<Grid />
 			</div>
