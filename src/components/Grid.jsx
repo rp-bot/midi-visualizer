@@ -18,20 +18,17 @@ const Grid = () => {
 	// Stores the amount of notes per row. This will help us change the grid-cols
 	const notesPerRow = 0;
 
-	// const handleClick = () => {
-	// 	if (!note) {
-	// 		setNote(!note);
-	// 		// console.log(note);
-	// 	} else {
-	// 		setNote(!note);
-	// 	}
-	// };
 	return (
-		<div className={`bg-white grid grid-rows-84  grid-flow-col`}>
-			{KEYS_RANGE.map((keynum, index) => {
-				return <Row key={index} keynum={keynum} />;
-			})}
-		</div>
+		<>
+			<div
+				className={`bg-white grid grid-rows-84 grid-flow-col`}
+			>
+				
+				{KEYS_RANGE.map((keynum, index) => {
+					return <Row key={index} keynum={keynum} />;
+				})}
+			</div>
+		</>
 	);
 };
 
