@@ -4,6 +4,8 @@ import Grid from "./Grid";
 import { VscTriangleDown } from "react-icons/vsc";
 
 const PianoRoll = () => {
+	const handleClick = () => {};
+
 	return (
 		<div className="flex">
 			<div className="flex-none">

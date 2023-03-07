@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import Box from "./Box";
 import Row from "./Row";
-import {
-	KEYS_RANGE,
-	STAFF,
-	KEYS,
-	OCTAVE_STRUCTURE,
-	OCTAVE_RANGES,
-} from "../constants/constants";
+import { KEYS_RANGE, ALL_NOTES } from "../constants/constants";
 
 // 88 keys * 16
 
@@ -20,12 +14,17 @@ const Grid = () => {
 
 	return (
 		<>
-			<div
-				className={`bg-white grid grid-rows-84 grid-flow-col`}
-			>
-				
+			<div className={`bg-white grid grid-rows-84 grid-flow-col`}>
 				{KEYS_RANGE.map((keynum, index) => {
-					return <Row key={index} keynum={keynum} />;
+					var bgshade = "";
+					if (ALL_NOTES[keynum] == "W") {
+						bgshade = "bg-white";
+					} else {
+						bgshade = "bg-gray-400";
+					}
+					return (
+						<Row key={index} keynum={keynum} bgshade={bgshade} />
+					);
 				})}
 			</div>
 		</>
