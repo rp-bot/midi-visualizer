@@ -22,7 +22,7 @@ const Box = ({ beatnum, keynum, index, ...attr }) => {
 
 	return (
 		<div
-			className={`col-span-1 row-span-1 col-start-${beatnum} bg-gray-200  border border-gray-600 h-5 ${noteStyle} `}
+			className={`col-span-1 row-span-1 col-start-${beatnum}  border  border-gray-300 h-5 ${noteStyle} `}
 			onClick={noteOn}
 			onDoubleClick={noteOff}
 			onContextMenu={(e) => noteOff(e)}
