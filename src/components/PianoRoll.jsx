@@ -11,6 +11,7 @@ const PianoRoll = () => {
 				<Piano />
 			</div>
 			<div className="flex-1 relative bg-gray-800 min-w-[1920px]">
+				{/* PlayHead */}
 				<div className={`absolute h-full translate-x-[100px]`}>
 					<svg
 						width="22"
