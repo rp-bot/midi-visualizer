@@ -3,7 +3,6 @@ import Box from "./Box";
 import { STAFF } from "../constants/constants";
 
 const Row = ({ keynum, bgshade }) => {
-	console.log(bgshade);
 	return (
 		<>
 			<div

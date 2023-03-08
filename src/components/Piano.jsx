@@ -20,7 +20,6 @@ const Piano = () => {
 	const handleMouseDown = (e, n) => {
 		const now = Tone.now();
 		var note = Tone.Frequency(n, "midi").toNote();
-
 		synth?.current?.triggerAttack(note, now);
 
 		isClicked.current = true;

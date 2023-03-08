@@ -4,7 +4,7 @@ import Grid from "./Grid";
 
 const PianoRoll = () => {
 	const handleClick = () => {};
-
+	
 	return (
 		<div className="flex">
 			<div className="flex-none">
