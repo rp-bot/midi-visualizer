@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Piano from "./Piano";
 import Grid from "./Grid";
-import { VscTriangleDown } from "react-icons/vsc";
 
 const PianoRoll = () => {
 	const handleClick = () => {};
@@ -9,12 +8,14 @@ const PianoRoll = () => {
 	return (
 		<div className="flex">
 			<div className="flex-none">
-				<div>h</div>
+				<div className="text-white bg-slate-300 grid grid-cols-1 h-5">
+					h
+				</div>
 				<Piano />
 			</div>
 			<div className="flex-1 relative bg-gray-800 min-w-[1920px]">
 				{/* PlayHead */}
-				<div className={`absolute h-full translate-x-[100px]`}>
+				{/* <div className={`absolute h-full translate-x-[0px]`}>
 					<svg
 						width="22"
 						height="1703"
@@ -32,8 +33,21 @@ const PianoRoll = () => {
 							fill="#FF0000"
 						/>
 					</svg>
+				</div> */}
+				<div
+					className=" bg-slate-300 grid grid-cols-16 p-0 h-5 text-sm text-black"
+					onClick={handleClick}
+				>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						1
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						2
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						3
+					</div>
 				</div>
-				<div onClick={handleClick}>h</div>
 
 				<Grid />
 			</div>
