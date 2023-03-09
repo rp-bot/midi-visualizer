@@ -13,7 +13,7 @@ const PianoRoll = () => {
 				</div>
 				<Piano />
 			</div>
-			<div className="flex-1 relative min-w-[1000px] max-w-[1000px]">
+			<div className="flex-1 relative min-w-[1440px] max-w-[1000px]">
 				{/* PlayHead */}
 				<div className={`absolute h-full translate-x-[0px]`}>
 					<svg
