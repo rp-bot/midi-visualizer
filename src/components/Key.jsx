@@ -16,7 +16,7 @@ const Key = ({ keyColor, midiNote, ...attr }) => {
 				className=" bg-black border border-black px-12  text-white h-5"
 				{...attr}
 			>
-				{/* {midiNote} */}
+				{midiNote}
 			</div>
 		);
 	}
