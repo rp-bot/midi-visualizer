@@ -54,8 +54,8 @@ const OCTAVE_1 = [
 
 const ALL_NOTES = {
 	24: "W",
-	26: "B",
-	25: "W",
+	25: "B",
+	26: "W",
 	27: "B",
 	28: "W",
 	29: "W",
