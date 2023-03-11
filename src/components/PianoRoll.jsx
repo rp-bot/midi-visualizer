@@ -3,11 +3,11 @@ import Piano from "./Piano";
 import Grid from "./Grid";
 
 const PianoRoll = () => {
-	const handleClick = () => {};
+	const handleClick = () => { };
 
 	return (
-		<div className="flex min-h-[1708px] max-h-[1705px]">
-			<div className="flex-none">
+		<div className="flex min-h-[1708px] max-h-[1705px] overflow-x-scroll overflow-y-scroll">
+			<div className="flex-none float-left sticky z-10 left-0">
 				<div className="text-white bg-slate-300 grid grid-cols-1 h-5">
 					h
 				</div>
