@@ -29,7 +29,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="grid grid-cols-5 h-screen gap-4 p-10">
+			<div className="grid grid-cols-5 h-[800px] gap-4 p-10">
 				<h1 className="col-span-1 col-start-2 justify-self-center self-center">
 					HELLO
 				</h1>
