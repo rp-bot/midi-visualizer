@@ -3,17 +3,17 @@ import Piano from "./Piano";
 import Grid from "./Grid";
 
 const PianoRoll = () => {
-	const handleClick = () => { };
+	const handleClick = () => {};
 
 	return (
-		<div className="flex min-h-[1708px] max-h-[1705px] overflow-x-scroll overflow-y-scroll">
+		<div className="flex ">
 			<div className="flex-none float-left sticky z-10 left-0">
 				<div className="text-white bg-slate-300 grid grid-cols-1 h-5">
 					h
 				</div>
 				<Piano />
 			</div>
-			<div className="flex-1 relative min-w-[1440px] max-w-[1000px]">
+			<div className="flex-1 relative  min-w-[1440px] max-w-[1000px]">
 				{/* PlayHead */}
 				<div className={`absolute h-full translate-x-[0px]`}>
 					<svg
