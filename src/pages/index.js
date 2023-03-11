@@ -50,7 +50,7 @@ export default function Home() {
 				<div className="col-span-1 col-start-4 px-2 justify-self-end self-center hover:text-red-500">
 					<BsFillTrashFill size={20} />
 				</div>
-				<div className="col-span-3 col-start-2 justify-self-center self-center max-h-full max-w-full overflow-x-scroll overflow-y-scroll  ">
+				<div className="col-span-3 col-start-2 justify-self-center self-center ">
 					<PianoRoll />
 				</div>
 			</div>
