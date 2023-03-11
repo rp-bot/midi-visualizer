@@ -34,7 +34,7 @@ const Box = ({ beatnum, keynum, index, ...attr }) => {
 			{...attr}
 		>
 			<div className="justify-self-end self-center text-white text-xs px-2">
-				{noteValue}{keynum}
+				{noteValue}
 			</div>
 		</div>
 	);

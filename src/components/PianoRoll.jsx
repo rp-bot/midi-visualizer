@@ -8,33 +8,35 @@ const PianoRoll = () => {
 	return (
 		<div className="flex ">
 			<div className="flex-none float-left sticky z-10 left-0">
-				<div className="text-white bg-slate-300 grid grid-cols-1 h-5">
+				<div className="sticky top-0 text-white bg-slate-300 grid grid-cols-1 h-5">
 					h
 				</div>
 				<Piano />
 			</div>
 			<div className="flex-1 relative  min-w-[1440px] max-w-[1000px]">
-				{/* PlayHead */}
-				<div className={`absolute h-full translate-x-[0px]`}>
-					<svg
-						width="22"
-						height="1703"
-						viewBox="0 0 22 1703"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path d="M0.5 0L0.499972 1703" stroke="#FF0000" />
-						<path
-							d="M22 12L1.00398 25L1.00398 0L22 12Z"
-							fill="#FF0000"
-							className="opacity-60"
-						/>
-					</svg>
-				</div>
 				<div
-					className=" bg-slate-300 grid grid-cols-16 p-0 h-5 text-sm text-black"
+					className="sticky top-0 bg-slate-300 grid grid-cols-16 p-0 h-5 text-sm text-black"
 					onClick={handleClick}
 				>
+					{/* PlayHead */}
+					<div className={`absolute h-full translate-x-[0px]`}>
+						<svg
+							width="22"
+							height="800"
+							viewBox="0 0 22 800"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M0.5 0L0.499972 800" stroke="#FF0000" />
+							<path
+								d="M22 12L1.00398 25L1.00398 0L22 12Z"
+								fill="#FF0000"
+								className="opacity-60"
+							/>
+						</svg>
+					</div>
+
+					{/* Beats */}
 					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
 						1
 					</div>

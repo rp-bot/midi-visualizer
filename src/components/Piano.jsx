@@ -45,8 +45,27 @@ const Piano = () => {
 	};
 
 	return (
-		<div className=" grid grid-cols-1 w-fit " onMouseLeave={handleMouseUp}>
+		<div
+			className="grid grid-cols-2 w-fit bg-white border-l"
+			onMouseLeave={handleMouseUp}
+		>
 			{/*h-[500px] overflow-scroll */}
+
+			<div className="col-span-1 col-start-1 bg-white border-b border-black row-start-1 row-end-12 grid">
+				<div className=" justify-self-end self-end">
+					<p className="text-black text-sm">C7</p>
+				</div>
+			</div>
+			<div className="col-span-1 col-start-1 bg-white border-b border-black row-start-12 row-end-24 grid">
+				<div className=" justify-self-end self-end">
+					<p className="text-black text-sm">C6</p>
+				</div>
+			</div>
+			<div className="col-span-1 col-start-1 bg-white border-b border-black row-start-24 row-end-36 grid">
+				<div className=" justify-self-end self-end">
+					<p className="text-black text-sm">C5</p>
+				</div>
+			</div>
 			{OCTAVE_RANGES.map((octave) =>
 				OCTAVE_STRUCTURE.map((key, index) => (
 					<Key
