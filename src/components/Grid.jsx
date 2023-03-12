@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Box from "./Box";
 import Row from "./Row";
 import { KEYS_RANGE, ALL_NOTES } from "../constants/constants";
@@ -11,6 +11,7 @@ const Grid = () => {
 
 	// Stores the amount of notes per row. This will help us change the grid-cols
 	const notesPerRow = 0;
+	const notesRef = useRef([]);
 
 	return (
 		<>
