@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tonejs/midi": "^2.0.28",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "midi.js": "^0.3.1",
