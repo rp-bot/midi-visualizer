@@ -2,7 +2,7 @@ import React from "react";
 import Box from "./Box";
 import { STAFF } from "../constants/constants";
 
-const Row = ({ keynum, bgshade, notesRef }) => {
+const Row = ({ keynum, bgshade, midiref }) => {
 	return (
 		<>
 			<div
@@ -14,7 +14,7 @@ const Row = ({ keynum, bgshade, notesRef }) => {
 							key={index}
 							beat={beatnum}
 							keynum={keynum}
-							ref={notesRef}
+							midiref={midiref}
 						/>
 					);
 				})}

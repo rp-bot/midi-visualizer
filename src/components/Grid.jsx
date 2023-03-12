@@ -11,7 +11,7 @@ const Grid = () => {
 
 	// Stores the amount of notes per row. This will help us change the grid-cols
 	const notesPerRow = 0;
-	const notesRef = useRef([]);
+	const midiRef = useRef([]);
 
 	return (
 		<>
@@ -24,7 +24,7 @@ const Grid = () => {
 						bgshade = "bg-gray-400";
 					}
 					return (
-						<Row key={index} keynum={keynum} bgshade={bgshade} ref={notesRef}/>
+						<Row key={index} keynum={keynum} bgshade={bgshade} midiref={midiRef}/>
 					);
 				})}
 			</div>
