@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import * as Tone from "tone";
 
-const Box = ({ beatnum, keynum, index, ...attr }) => {
+const Box = ({ beatnum, keynum, index, notesRef, ...attr }) => {
 	const [noteStyle, setNoteStyle] = useState("");
 	const [noteValue, setNoteValue] = useState("");
 	const noteStatus = useRef(false);
