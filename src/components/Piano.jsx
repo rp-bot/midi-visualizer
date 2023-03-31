@@ -5,23 +5,28 @@ import { KEYS, OCTAVE_STRUCTURE, OCTAVE_RANGES } from "../constants/constants";
 
 const Piano = () => {
 	const synth = useRef(null);
+	const sampler = useRef(null);
 
 	const isClicked = useRef(false);
 
-	//TODO const changecolor = "gray-700"
-
-	// TODO useRef to set boolean true or false when mouse is down or up
-	// TODO Add listener when cursor enters the element
-
 	useEffect(() => {
 		synth.current = new Tone.Synth().toDestination();
+		sampler.current = new Tone.Sampler({
+			urls: {
+				A1: "A1.mp3",
+				A2: "A2.mp3",
+			},
+			baseUrl: "https://tonejs.github.io/audio/casio/",
+		}).toDestination();
 	}, []);
 
 	const handleMouseDown = (e, n) => {
 		const now = Tone.now();
 		var note = Tone.Frequency(n, "midi").toNote();
-		synth?.current?.triggerAttack(note, now);
 
+		// synth?.current?.triggerAttack(note, now);
+		// works with multiple notes and we can add different sound
+		sampler?.current?.triggerAttackRelease([note], "4n");
 		isClicked.current = true;
 	};
 
