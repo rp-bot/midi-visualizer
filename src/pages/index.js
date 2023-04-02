@@ -11,6 +11,7 @@ import {
 	BsFillRecordFill,
 	BsFillTrashFill,
 } from "react-icons/bs";
+import Metronome from "@/components/Metronome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function Home() {
 			</Head>
 			<div className="grid grid-cols-5 h-[800px] gap-4 p-10">
 				<h1 className="col-span-1 col-start-2 justify-self-center self-center">
-					HELLO
+					<Metronome />
 				</h1>
 				<div className="justify-self-center self-center grid grid-cols-3 gap-2 ">
 					<BsFillPlayFill
@@ -50,6 +51,7 @@ export default function Home() {
 				<div className="col-span-1 col-start-4 px-2 justify-self-center self-center hover:text-red-500">
 					<BsFillTrashFill size={20} />
 				</div>
+
 				<div className="col-span-3 col-start-2 justify-self-center self-center max-h-full max-w-full overflow-x-scroll overflow-y-scroll">
 					<PianoRoll />
 				</div>

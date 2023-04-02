@@ -26,7 +26,7 @@ const Piano = () => {
 
 		// synth?.current?.triggerAttack(note, now);
 		// works with multiple notes and we can add different sound
-		sampler?.current?.triggerAttackRelease([note], "4n");
+		sampler?.current?.triggerAttackRelease([note], 3000);
 		isClicked.current = true;
 	};
 
