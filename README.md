@@ -1,5 +1,5 @@
 # midi-visualizer
-## Construct melodies
+### Feature Description
 
 - Built using ReactJs.
 - Features the ToneJs library.
