@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Piano from "@/components/Piano";
 import Player from "@/components/Player";
 import PianoRoll from "@/components/PianoRoll";
+import PianoRollControl from "@/components/PianoRollControl";
 import {
 	BsFillPlayFill,
 	BsFillStopFill,
@@ -34,20 +35,9 @@ export default function Home() {
 				<h1 className="col-span-1 col-start-2 justify-self-center self-center">
 					<Metronome />
 				</h1>
-				<div className="justify-self-center self-center grid grid-cols-3 gap-2 ">
-					<BsFillPlayFill
-						size={40}
-						className="col-span-1 justify-self-center self-center hover:text-green-500"
-					/>
-					<BsFillStopFill
-						size={40}
-						className="col-span-1 col-start-2 justify-self-center self-center hover:text-yellow-400"
-					/>
-					<BsFillRecordFill
-						size={40}
-						className="col-span-1 col-start-3 justify-self-center self-center hover:text-red-500"
-					/>
-				</div>
+				
+					<PianoRollControl />
+				
 				<div className="col-span-1 col-start-4 px-2 justify-self-center self-center hover:text-red-500">
 					<BsFillTrashFill size={20} />
 				</div>

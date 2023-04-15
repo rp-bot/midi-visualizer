@@ -24,7 +24,7 @@ const Grid = () => {
 						bgshade = "bg-gray-400";
 					}
 					return (
-						<Row key={index} keynum={keynum} bgshade={bgshade} midiref={midiRef}/>
+						<Row key={index} keynum={keynum} midiref={midiRef}/>
 					);
 				})}
 			</div>
