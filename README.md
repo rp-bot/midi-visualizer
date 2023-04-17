@@ -1,6 +1,11 @@
 # midi-visualizer
 ### Feature Description
 
+<p align="center">
+  <img src="img/canvas_duedates_max.png" alt="Image description" style="width: 500px; height: auto;">
+</p>
+
+
 - Built using ReactJs.
 - Features the ToneJs library.
 - Allows user to load MIDI files and download constructed melodies as MIDI.
