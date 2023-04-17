@@ -6,9 +6,12 @@ import {
 } from "react-icons/bs";
 
 const PianoRollControl = () => {
+	const handlePlay=()=>{
+		
+	}
 	return (
 		<div className="justify-self-center self-center grid grid-cols-3 gap-2 ">
-			<button className="col-span-1 justify-self-center self-center">
+			<button className="col-span-1 justify-self-center self-center" onClick={handlePlay}>
 				<BsFillPlayFill size={40} className=" hover:text-green-500" />
 			</button>
 			<button className="col-span-1 justify-self-center self-center">
