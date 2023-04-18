@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const NOTE_SEQUENCE = [{}];
+const NOTE_SEQUENCE = [];
 
 export default function melody_handler(req, res) {
 	if (req.method === "GET") {
