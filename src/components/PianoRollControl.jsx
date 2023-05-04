@@ -1,21 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
 	BsFillPlayFill,
 	BsFillStopFill,
 	BsFillRecordFill,
 	BsFillTrashFill,
 } from "react-icons/bs";
+import * as Tone from "tone";
 
 const PianoRollControl = ({ melodyRef }) => {
-	// const [midiSequence, setMidiSequence] = useState([])
+	const synth = useRef(null);
+	const sampler = useRef(null);
+
+	useEffect(() => {
+		synth.current = new Tone.Synth().toDestination();
+		sampler.current = new Tone.Sampler({
+			urls: {
+				A1: "A1.mp3",
+				A2: "A2.mp3",
+			},
+			baseUrl: "https://tonejs.github.io/audio/casio/",
+		}).toDestination();
+	}, []);
+
 	const handlePlay = async () => {
 		const response = await fetch("api/melody_handler");
 		const sequence = await response.json();
 		melodyRef = sequence;
-		console.log(melodyRef.NOTE_SEQUENCE);
+		melodyRef.NOTE_SEQUENCE.sort((a, b) => a.beat - b.beat);
+		const sortedArray = melodyRef.NOTE_SEQUENCE.filter(
+			(obj, index, arr) => {
+				return (
+					arr.findIndex(
+						(t) => t.beat === obj.beat && t.note === obj.note
+					) === index
+				);
+			}
+		);
+
+		
 	};
 	const handleStop = () => {};
-	const deleteSequence = () => {};
+	const deleteSequence = async () => {
+		const response = await fetch("api/melody_handler", {
+			method: "DELETE",
+		});
+		const dat = await response.json();
+
+		console.log(dat);
+	};
 	return (
 		<>
 			<div className="justify-self-center self-center grid grid-cols-3 gap-2 ">

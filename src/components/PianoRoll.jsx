@@ -46,6 +46,45 @@ const PianoRoll = () => {
 					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
 						3
 					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						4
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						5
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						6
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						7
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						8
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						9
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						10
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						11
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						12
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						13
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						14
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						15
+					</div>
+					<div className="col-span-1 justify-self-center self-center w-full h-5 border-l border-y border-black">
+						16
+					</div>
 				</div>
 
 				<Grid />
