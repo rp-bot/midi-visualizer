@@ -12,9 +12,9 @@
 
 ---
 
-## Installation
+## Local installation
 
-Try it out locally
+
 
 > You need `npm` for this procedure.
 
