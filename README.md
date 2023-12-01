@@ -1,4 +1,4 @@
-# midi-visualizer
+# Piano Roll (js) 
 
 ### Feature Description
 
