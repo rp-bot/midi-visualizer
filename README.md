@@ -1,4 +1,4 @@
-# Piano Roll (js) 
+# Piano Roll (.js) 
 
 ### Feature Description
 
